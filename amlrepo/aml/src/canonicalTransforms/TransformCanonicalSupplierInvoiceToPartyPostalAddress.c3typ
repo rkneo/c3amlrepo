@@ -1,7 +1,8 @@
+@canonicalTransform(condition="exists(contact_first_name) || exists(contact_last_name)")
 
 type TransformCanonicalSupplierInvoiceToPartyPostalAddress
     mixes PartyPostalAddress 
-      transforms CanonicalSupplierInvoice {
+      transforms CanonicalSupplierInvoice 
 {
     parent:     ~ expression "{id: concat(contact_first_name, '_', contact_last_name)}"
   
