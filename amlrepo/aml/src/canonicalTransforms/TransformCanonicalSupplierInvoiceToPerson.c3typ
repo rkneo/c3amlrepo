@@ -1,6 +1,8 @@
+@canonicalTransform(condition="exists(contact_first_name) || exists(contact_last_name)")
+
 type TransformCanonicalSupplierInvoiceToPerson 
     mixes Person 
-      transforms CanonicalSupplierInvoice {
+      transforms CanonicalSupplierInvoice
 {
   id:         ~ expression "concat(contact_first_name, '_', contact_last_name)"
   firstName:  ~ expression "contact_first_name"

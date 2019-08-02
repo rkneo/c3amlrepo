@@ -4,5 +4,5 @@ type TransformCanonicalSupplierInvoice__Supplier
                              transforms CanonicalSupplierInvoice {
   id:   ~ expression "md5(supplier_name)"
   name: ~ expression "supplier_name"
-
+  party: ~ expression {"id: md5(supplier_name)"}
 }

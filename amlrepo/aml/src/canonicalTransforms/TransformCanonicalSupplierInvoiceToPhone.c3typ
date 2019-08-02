@@ -1,3 +1,6 @@
+@canonicalTransform(condition="exists(contact_first_name) || exists(contact_last_name)")
+
+
 type TransformCanonicalSupplierInvoiceToPhone 
     mixes PartyPhone 
         transforms CanonicalSupplierInvoice 
