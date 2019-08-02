@@ -1,0 +1,8 @@
+@canonicalTransform(condition="exists(supplier_name)")
+type TransformCanonicalSupplierInvoice__Supplier
+                                  mixes Supplier
+                             transforms CanonicalSupplierInvoice {
+  id:   ~ expression "md5(supplier_name)"
+  name: ~ expression "supplier_name"
+
+}

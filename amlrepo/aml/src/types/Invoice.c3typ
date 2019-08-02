@@ -1,0 +1,17 @@
+entity type Invoice mixes MetricEvaluatable schema name 'INVS' {
+    supplier:                       [Supplier](id)
+    invoiceAmount:                  double
+    paymentAmount:                  double
+    invoiceDate:                    datetime
+    paymentDate:                    datetime
+    clearedDate:                    datetime
+    invoiceCancelledDate:           datetime
+    recordCreateMechanism:          string
+    fullOrPartPaid:                 string enum FullPartPaid 
+    currency:                       Currency
+    supplierLastModifiedDate:       datetime
+    bankName:                       string 
+    bankAccountName:                string
+    branchNumber:                   string
+    bankAccountNumber:              string
+}

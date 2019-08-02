@@ -1,7 +1,7 @@
-type CanonicalCountry mixes Canonical<CanonicalCountry> {
+type CanonicalCountry mixes Source {
     id:	    string
     code2:	string
     code3:	string
-    name:	string
+    name: 	string
     risk:   string
 }
