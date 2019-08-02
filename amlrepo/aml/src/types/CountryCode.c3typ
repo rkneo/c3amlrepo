@@ -1,4 +1,4 @@
 remix type CountryCode  
 {
-    risk: string
+    countryRisk: CountryRisk(countryCode)
 }

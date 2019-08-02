@@ -1,0 +1,7 @@
+@canonicalTransform(condition='exists(code2)') 
+type TransformCanonicalCountryToCountryRisk mixes CountryRisk transforms CanonicalCountry
+{
+    id:             ~ expression "concat('ISO 3166-2:', code2)"
+    risk:           ~ expression "risk"
+    countryCode:    ~ expression {id: "concat('ISO 3166-2:', code2)"}
+}

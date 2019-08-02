@@ -1,0 +1,6 @@
+@db(unique=['countryCode'])
+entity type CountryRisk schema name "CRISK"
+{
+    risk: string
+    countryCode: CountryCode
+}
