@@ -1,0 +1,5 @@
+type TransformCanonicalSupplierInvoice__Invoice
+                                  mixes Invoice
+                             transforms CanonicalSupplierInvoice {
+    id: ~ expression "concat(supplier_number, '_', invoice_num)"
+}

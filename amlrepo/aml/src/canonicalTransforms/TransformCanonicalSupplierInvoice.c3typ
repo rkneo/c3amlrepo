@@ -1,5 +1,0 @@
-type TransformCanonicalSupplierInvoice mixes Supplier transforms TransformCanonicalSupplierInvoice
-{
-    id: ~ expression "supplier_number"
-    
-}
