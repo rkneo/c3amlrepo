@@ -1,0 +1,7 @@
+{
+  "name" : "aml",
+  "description" : "The super reliable Mr. AML demo, a byproduct of a rough two weeks in Redwood City, CA",
+  "author" : "",
+  "icon" : "",
+  "dependencies" : ["standardDependencies"]
+}

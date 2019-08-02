@@ -1,0 +1,15 @@
+ui module AML {
+    application AML {
+        "name": "AML",
+        "id": "AML",
+        "humanName": "Anti-Money Laundering",
+        "bundle": "AML",
+        "url": "aml",
+        "package": "aml",
+        "defaultPage": "Dashboard",
+        "showMenu": true,
+        "thumbnail": "template-thumbs/120/ui.Dashboard2x2.gif",
+        "hideNavigation": false,
+        "theme": "base"
+    }
+}

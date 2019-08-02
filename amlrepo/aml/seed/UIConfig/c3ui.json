@@ -1,0 +1,35 @@
+{
+  "id": "uiconfig",
+  "applications": [
+    {
+      "id": "AML"
+    }
+  ],
+  "environments": [
+    {
+      "id": "development",
+      "defaultApplication": "AML",
+      "session": {
+        "cache": "LocalStorage"
+      },
+      "locales": [
+        {
+          "id": "en",
+          "name": "English"
+        }
+      ],
+      "site": {
+        "renderLogo": true,
+        "hideNavigation": true,
+        "logoutTime": 1500
+      },
+      "connection": {
+        "cache": false,
+        "timeoutTime": 28800000
+      },
+      "designer": false,
+      "c3Tools": true,
+      "acl": true
+    }
+  ]
+}
