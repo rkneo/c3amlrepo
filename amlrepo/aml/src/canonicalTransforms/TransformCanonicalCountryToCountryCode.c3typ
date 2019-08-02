@@ -1,5 +1,5 @@
 @canonicalTransform(condition='exists(code2)') 
-type TransformCanonicalCountryToCountryCode mixes CountryCode transforms TransformCanonicalCountryToCountryCode
+type TransformCanonicalCountryToCountryCode mixes CountryCode transforms CanonicalCountry
 {
     id: ~ expression  "concat('ISO 3166-2:', code2)"
     englishShortName: ~ expression "name"
