@@ -1,0 +1,8 @@
+type TransformCanonicalSupplierInvoiceToPerson 
+    mixes Person 
+      transforms CanonicalSupplierInvoice {
+{
+  id:         ~ expression "concat(contact_first_name, '_', contact_last_name)"
+  firstName:  ~ expression "contact_first_name"
+  lastName:   ~ expression "contact_last_name"
+}
