@@ -1,6 +1,6 @@
 type TransformCanonicalSupplierInvoiceToInvoice mixes Invoice transforms CanonicalSupplierInvoice {
-    id:                         ~ expression "invoice_num" 
-    supplier:                   ~ expression {id: "supplier_number"}             
+    id:                         ~ expression "concat(supplier_number,'_',invoice_num)" 
+    supplier:                   ~ expression {id: "md5(supplier_name)"}             
     invoiceAmount:              ~ expression "invoice_amount" 
     paymentAmount:              ~ expression "payment_amount" 
     invoiceDate:                ~ expression "dateTime(invoice_date,'d/MM/yyyy')" 
