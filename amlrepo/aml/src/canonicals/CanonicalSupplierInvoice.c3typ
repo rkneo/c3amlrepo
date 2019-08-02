@@ -1,0 +1,117 @@
+type CanonicalSupplierInvoice mixes Source{
+	//Field Names
+    @ser(name="Report Date")
+	report_date: string 
+
+    @ser(name="Supplier Name")
+	supplier_name: string 
+
+    @ser(name="Supplier Number")
+	supplier_number: string 
+
+    @ser(name="Supplier Site")
+	supplier_site: string 
+
+    @ser(name="Invoice Num")
+	invoice_num: string 
+
+    @ser(name="Invoice Amount")
+	invoice_amount: string 
+
+    @ser(name="Payment Amount")
+	payment_amount: string
+
+    @ser(name="Invoice Date") 
+	invoice_date: string 
+
+    @ser(name="Payment Date")
+	payment_date: string 
+
+    @ser(name="Cleared Date")
+	cleared_date: string 
+
+    @ser(name="Invoice Cancelled Date")
+	invoice_cancelled_date: string
+
+    @ser(name="Record Create Mechanism") 
+	record_create_mechanism: string
+
+    @ser(name="full Or Part Paid") 
+	full_or_part_paid: string 
+
+    @ser(name="Currency")
+	currency: string 
+
+    @ser(name="Supplier Last Modified Date")
+	supplier_last_modified_date: string
+
+    @ser(name="Bank Name") 
+	bank_name: string 
+
+    @ser(name="Bank Account Name")
+	bank_account_name: string 
+
+    @ser(name="Branch Number")
+	branch_number: string 
+
+    @ser(name="Bank Account Number")
+	bank_account_number: string
+
+    @ser(name="ABN") 
+	abn: string 
+
+    @ser(name="Tax Registration Country")
+	tax_registration_country: string
+
+    @ser(name="Tax Registration Type") 
+	tax_registration_type: string
+
+    @ser(name="Address1") 
+	address1: string 
+
+    @ser(name="Address2")
+	address2: string 
+
+    @ser(name="Address3")
+	address3: string 
+
+    @ser(name="Address4")
+	address4: string 
+
+    @ser(name="City")
+	city: string 
+
+    @ser(name="State")
+	state: string 
+
+    @ser(name="Country")
+	country: string 
+
+    @ser(name="Postal Code")
+	postal_code: string 
+
+    @ser(name="Phone Country Code")
+	phone_country_code: string 
+
+    @ser(name="Phone Area Code")
+	phone_area_code: string 
+
+    @ser(name="Phone Number")
+	phone_number: string 
+
+    @ser(name="Fax Country Code")
+	fax_country_code: string 
+
+    @ser(name="Fax Area Code")
+	fax_area_code: string 
+
+    @ser(name="Fax Number")
+	fax_number: string 
+
+    @ser(name="Contact First Name")
+	contact_first_name: string 
+
+    @ser(name="Contact Last Name")
+	contact_last_name: string 
+
+}

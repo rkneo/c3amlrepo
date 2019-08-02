@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalSupplierInvoice",
+    "name": "CanonicalSupplierInvoice",
+    "source": {
+      "typeName": "CanonicalSupplierInvoice"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+}
+  
