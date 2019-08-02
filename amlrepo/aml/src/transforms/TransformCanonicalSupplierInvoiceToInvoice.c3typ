@@ -1,0 +1,18 @@
+type TransformCanonicalSupplierInvoiceToInvoice mixes Invoice transforms CanonicalSupplierInvoice {
+    id:                         ~ expression "invoice_num" 
+    supplier:                   ~ expression {id: "supplier_number"}             
+    invoiceAmount:              ~ expression "invoice_amount" 
+    paymentAmount:              ~ expression "payment_amount" 
+    invoiceDate:                ~ expression "dateTime(invoice_date,'d/MM/yyyy')" 
+    paymentDate:                ~ expression "dateTime(payment_date,'d/MM/yyyy')" 
+    clearedDate:                ~ expression "dateTime(cleared_date,'d/MM/yyyy')" 
+    invoiceCancelledDate:       ~ expression "dateTime(invoice_cancelled_date,'d/MM/yyyy')" 
+    recordCreateMechanism:      ~ expression "record_create_mechanism" 
+    fullOrPartPaid:             ~ expression "full_or_part_paid  == 'Fully Paid'?'FullyPaid':'Partpaid'"
+    currency:                   ~ expression {id: "currency"} 
+    supplierLastModifiedDate:   ~ expression "dateTime(supplier_last_modified_date,'d/MM/yyyy')" 
+    bankName:                   ~ expression "bank_name" 
+    bankAccountName:            ~ expression "bank_account_name" 
+    branchNumber:               ~ expression "branch_number" 
+    bankAccountNumber:          ~ expression "bank_account_number" 
+}
