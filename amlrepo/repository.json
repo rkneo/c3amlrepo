@@ -2,5 +2,5 @@
   "name": "amlrepo",
   "version": "1.0.0",
   "description": "AML Repository",
-  "dependencies": { "base" : "7.8.62"}
+  "dependencies": { "base" : "7.8.68"}
 }
