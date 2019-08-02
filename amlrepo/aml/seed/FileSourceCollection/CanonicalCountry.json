@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalCountry",
+    "name": "CanonicalCountry",
+    "source": {
+      "typeName": "CanonicalCountry"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+}
+  
