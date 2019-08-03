@@ -1,5 +1,9 @@
 entity type Invoice mixes MetricEvaluatable schema name 'INVS' {
-    supplier:                       [Supplier](id)
+
+    /**
+     * this is a type reference, not a foreign key!
+     */
+    supplier:                       Supplier
     invoiceAmount:                  double
     paymentAmount:                  double
     invoiceDate:                    datetime
@@ -7,10 +11,10 @@ entity type Invoice mixes MetricEvaluatable schema name 'INVS' {
     clearedDate:                    datetime
     invoiceCancelledDate:           datetime
     recordCreateMechanism:          string
-    fullOrPartPaid:                 string enum FullPartPaid 
+    fullOrPartPaid:                 string enum FullPartPaid
     currency:                       Currency
     supplierLastModifiedDate:       datetime
-    bankName:                       string 
+    bankName:                       string
     bankAccountName:                string
     branchNumber:                   string
     bankAccountNumber:              string

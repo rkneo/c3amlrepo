@@ -4,4 +4,5 @@ type TransformCanonicalSupplierInvoice__Organization
                              transforms CanonicalSupplierInvoice {
   id:   ~ expression "md5(supplier_name)"
   name: ~ expression "supplier_name"
+  country: ~ expression "{id: concat('ISO 3166-2:', country)}"
 }
