@@ -4,7 +4,7 @@ type TransformCanonicalSupplierInvoiceToPartyPostalAddress
     mixes PartyPostalAddress 
       transforms CanonicalSupplierInvoice 
 {
-    parent:     ~ expression "{id: concat(contact_first_name, '_', contact_last_name)}"
+    party:     ~ expression {id: "concat(contact_first_name, '_', contact_last_name)"} 
   
     components: ~ expression "[{name: concat(address1, '; ', address2,  '; ', address3,  '; ', address4), types: [{id: 'street_address'}]},"
                             "{name: CITY_NM, types:[{id: 'city'}]},"

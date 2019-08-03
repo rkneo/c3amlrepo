@@ -5,7 +5,7 @@ type TransformCanonicalSupplierInvoiceToPhone
     mixes PartyPhone 
         transforms CanonicalSupplierInvoice 
 {
-  parent:   ~ expression "{id: concat(contact_first_name, '_', contact_last_name)}"
+  party:   ~ expression {id: "concat(contact_first_name, '_', contact_last_name)"}
   number:   ~ expression "concat(phone_country_code, phone_area_code, phone_number)"
 }
 
